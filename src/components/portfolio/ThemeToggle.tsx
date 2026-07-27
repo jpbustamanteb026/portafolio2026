@@ -41,12 +41,12 @@ export function ThemeToggle() {
     <label
       htmlFor="themeToggle"
       className="themeToggle st-sunMoonThemeToggleBtn"
-      title={isLight ? "Switch to dark mode" : "Switch to light mode"}
+      title={isLight ? "Cambiar al modo oscuro" : "Cambiar al modo claro"}
     >
-      <input 
-        type="checkbox" 
-        id="themeToggle" 
-        className="themeToggleInput" 
+      <input
+        type="checkbox"
+        id="themeToggle"
+        className="themeToggleInput"
         checked={!isLight}
         onChange={toggle}
       />
@@ -70,11 +70,31 @@ export function ThemeToggle() {
         ></circle>
         <g>
           <circle className="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
-          <circle className="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
-          <circle className="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+          <circle
+            className="sunRay sunRay2"
+            cx="14"
+            cy="16.928"
+            r="1.5"
+          ></circle>
+          <circle
+            className="sunRay sunRay3"
+            cx="6"
+            cy="16.928"
+            r="1.5"
+          ></circle>
           <circle className="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
-          <circle className="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
-          <circle className="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+          <circle
+            className="sunRay sunRay5"
+            cx="6"
+            cy="3.1718"
+            r="1.5"
+          ></circle>
+          <circle
+            className="sunRay sunRay6"
+            cx="14"
+            cy="3.1718"
+            r="1.5"
+          ></circle>
         </g>
       </svg>
     </label>
