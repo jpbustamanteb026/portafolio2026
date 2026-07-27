@@ -54,7 +54,7 @@ const PROJECTS = [
       { name: "Shadcn/ui", slug: "shadcnui" },
     ],
     image: valleo2,
-    url: "TU_URL_DE_VERCEL_AQUI",
+    url: "https://github.com/jpbustamanteb026/valleo2",
   },
   {
     num: "03",

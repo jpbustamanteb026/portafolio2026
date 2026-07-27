@@ -10,12 +10,11 @@ const DECOR = {
 
 const TECH_STACK = [
   { name: "React", slug: "react", color: "61DAFB" },
+  { name: "Vite", slug: "vite", color: "646CFF" },
+  { name: "Angular", slug: "angular", color: "DD0031" },
   { name: "TypeScript", slug: "typescript", color: "3178C6" },
   { name: "JavaScript", slug: "javascript", color: "F7DF1E" },
-  { name: "Angular", slug: "angular", color: "DD0031" },
   { name: "Tailwind CSS", slug: "tailwindcss", color: "06B6D4" },
-  { name: "TanStack Query", slug: "reactquery", color: "FF4154" },
-  { name: "Vite", slug: "vite", color: "646CFF" },
   { name: "Vercel", slug: "vercel", color: "000000", class: "invert-on-light" },
   { name: "REST APIs", slug: "postman", color: "FF6C37" },
   { name: "Git", slug: "git", color: "F05032" },
@@ -32,7 +31,7 @@ export function AboutSection() {
         x={-80}
         y={0}
         duration={0.9}
-        className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-[120px] sm:w-[160px] md:w-[210px]"
+        className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-25 sm:w-30 md:w-52.5"
       >
         <img
           src={DECOR.tl}
@@ -46,7 +45,7 @@ export function AboutSection() {
         x={-80}
         y={0}
         duration={0.9}
-        className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] w-[100px] sm:w-[140px] md:w-[180px]"
+        className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] w-20 sm:w-30 md:w-45"
       >
         <img
           src={DECOR.bl}
@@ -60,7 +59,7 @@ export function AboutSection() {
         x={80}
         y={0}
         duration={0.9}
-        className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-[120px] sm:w-[160px] md:w-[210px]"
+        className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-20 sm:w-40 md:w-52.5"
       >
         <img
           src={DECOR.tr}
@@ -74,7 +73,7 @@ export function AboutSection() {
         x={80}
         y={0}
         duration={0.9}
-        className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] w-[130px] sm:w-[170px] md:w-[220px]"
+        className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] w-25 sm:w-42.5 md:w-55"
       >
         <img
           src={DECOR.br}
@@ -98,7 +97,7 @@ export function AboutSection() {
         <div className="flex flex-col items-center gap-10 sm:gap-14">
           <AnimatedText
             text="Ingeniero Multimedia con experiencia en desarrollo frontend con React y Angular. He trabajado en proyectos que van desde aplicaciones de navegación institucional hasta dashboards de datos en tiempo real, además de colaborar en investigación aplicada con grupos de investigación en ciencia de datos. Me enfoco en construir interfaces funcionales y bien pensadas, con una base creativa en diseño 3D e interacción que complementa el desarrollo web."
-            className="font-medium text-center leading-relaxed max-w-[600px]"
+            className="font-medium text-center leading-relaxed max-w-150"
             style={{
               color: "var(--page-fg)",
               fontSize: "clamp(0.9rem, 1.6vw, 1.25rem)",
@@ -107,7 +106,7 @@ export function AboutSection() {
 
           {/* Tech stack pills */}
           <FadeIn delay={0.3} y={20}>
-            <div className="flex flex-wrap justify-center gap-2 max-w-[580px]">
+            <div className="flex flex-wrap justify-center gap-2 max-w-145">
               {TECH_STACK.map((tech) => {
                 const iconUrl = tech.color
                   ? `https://cdn.simpleicons.org/${tech.slug}/${tech.color}`
