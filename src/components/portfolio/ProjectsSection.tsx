@@ -35,11 +35,11 @@ const PROJECTS = [
       { name: "Qgis", slug: "qgis" },
     ],
     image: campusMap,
-    url: "https://github.com/AllianceBioversityCIAT/alliance-campusmap",
+    url: "",
   },
   {
     num: "02",
-    category: "Personal",
+    category: "",
     name: "ValleO2",
     desc: "Dashboard de clima y calidad del aire para Cali, con datos en tiempo real y visualizaciones interactivas.",
     bullets: [
@@ -54,7 +54,7 @@ const PROJECTS = [
       { name: "Shadcn/ui", slug: "shadcnui" },
     ],
     image: valleo2,
-    url: "https://github.com/jpbustamanteb026/valleo2",
+    url: "",
   },
   {
     num: "03",
@@ -96,7 +96,7 @@ const PROJECTS = [
   },
   {
     num: "05",
-    category: "Personal",
+    category: "Automatización",
     name: "Chatbot Climático por Voz",
     desc: "Sistema de interacción por voz con procesamiento de lenguaje natural, usando datos climáticos en tiempo real del Observatorio Ambiental de la Comuna 22.",
     bullets: [
