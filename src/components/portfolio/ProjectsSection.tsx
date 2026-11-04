@@ -7,7 +7,8 @@ import {
 } from "framer-motion";
 import { Star } from "lucide-react";
 import { LiveProjectButton } from "./LiveProjectButton";
-import valleo2 from "@/assets/valleo2/valleo2.webp";
+import bioAroma from "@/assets/bioAroma/bioAroma.webp";
+import quiclick from "@/assets/quiclick/quiclick.webp";
 import campusMap from "@/assets/campusmap/campusmap.webp";
 import endansys from "@/assets/endansys/endansys.webp";
 import geocluster from "@/assets/geocluster/geocluster.webp";
@@ -16,9 +17,43 @@ import chatbotClimatico from "@/assets/chatbot/chatbot.jpg";
 const PROJECTS = [
   {
     num: "01",
+    category: "Ecommerce de aromatizantes industriales y fragancias",
+    name: "BioAroma",
+    highlighted: true,
+    desc: "Ecommerce desarrollada en shopify para la venta de difusores industriales y fragancias",
+    bullets: [
+      "Desarrollada en shopify pensada para los modelos de venta B2B y B2C",
+      "Cuenta con configuracion en meta business para publicidad en Instragram y Facebook",
+    ],
+    stack: [
+      { name: "Shopify", slug: "shopify", color: "7AB55C" },
+      { name: "Meta", slug: "meta", color: "0467DF" },
+      { name: "Google Gemini", slug: "googlegemini", color: "8E75B2" },
+    ],
+    image: bioAroma,
+    url: "https://bioaromacali.myshopify.com/",
+  },
+  {
+    num: "02",
+    category: "Ecommerce de productos de belleza coreana",
+    name: "QuiClick",
+    desc: "Ecommerce desarrollada en shopify para la venta de difusores industriales y fragancias",
+    bullets: [
+      "Desarrollada en shopify pensada para el modelo de venta B2C",
+      "Cuenta con configuracion en meta business para publicidad en Instragram y Facebook",
+    ],
+    stack: [
+      { name: "Shopify", slug: "shopify", color: "7AB55C" },
+      { name: "Meta", slug: "meta", color: "0467DF" },
+      { name: "Google Gemini", slug: "googlegemini", color: "8E75B2" },
+    ],
+    image: quiclick,
+    url: "https://github.com/jpbustamanteb026/Quiclick",
+  },
+  {
+    num: "03",
     category: "Práctica Profesional",
     name: "Campus Map",
-    highlighted: true,
     desc: "Aplicación interactiva de navegación GPS para el campus de Palmira, desarrollada durante mi práctica en Alliance Bioversity International & CIAT.",
     bullets: [
       "Navegación por GPS pensada para facilitar la orientación de visitantes y nuevos miembros dentro del campus.",
@@ -35,30 +70,11 @@ const PROJECTS = [
       { name: "Qgis", slug: "qgis" },
     ],
     image: campusMap,
-    url: "",
+    url: "https://github.com/AllianceBioversityCIAT/alliance-campusmap",
   },
   {
-    num: "02",
-    category: "",
-    name: "ValleO2",
-    desc: "Dashboard de clima y calidad del aire para Cali, con datos en tiempo real y visualizaciones interactivas.",
-    bullets: [
-      "Consumo de las APIs de Open-Meteo y OpenAQ para datos meteorológicos y de calidad del aire en tiempo real.",
-      "Interfaz con estética de dashboard oscuro, construida con shadcn/ui y Tailwind CSS v4 sobre un proceso de diseño Figma.",
-    ],
-    stack: [
-      { name: "React", slug: "react" },
-      { name: "Git", slug: "git" },
-      { name: "Postman", slug: "postman" },
-      { name: "Tailwind CSS", slug: "tailwindcss" },
-      { name: "Shadcn/ui", slug: "shadcnui" },
-    ],
-    image: valleo2,
-    url: "",
-  },
-  {
-    num: "03",
-    category: "Investigación (Semillero PADIA)",
+    num: "04",
+    category: "Investigación",
     name: "EndanSys",
     desc: "Sistema de monitoreo basado en inteligencia artificial para identificación y clasificación de especies en peligro de extinción en Colombia.",
     bullets: [
@@ -77,8 +93,8 @@ const PROJECTS = [
     url: "https://github.com/NataliaGiraldoA/Endansys",
   },
   {
-    num: "04",
-    category: "Investigación (Semillero PADIA)",
+    num: "05",
+    category: "Investigación",
     name: "GeoCluster",
     desc: "Herramienta de agrupamiento geográfico mediante aprendizaje automático no supervisado para clasificar zonas de riesgo sísmico en Sudamérica.",
     bullets: [
@@ -95,7 +111,7 @@ const PROJECTS = [
     url: "https://github.com/jpbustamanteb026/GeoClusters",
   },
   {
-    num: "05",
+    num: "06",
     category: "Automatización",
     name: "Chatbot Climático por Voz",
     desc: "Sistema de interacción por voz con procesamiento de lenguaje natural, usando datos climáticos en tiempo real del Observatorio Ambiental de la Comuna 22.",

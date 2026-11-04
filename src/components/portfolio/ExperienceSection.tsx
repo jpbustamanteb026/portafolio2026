@@ -2,6 +2,18 @@ import { FadeIn } from "./FadeIn";
 
 const EXPERIENCE = [
   {
+    role: "Freelance",
+    company:
+      "Creación de ecommerce, configuración de meta business y creación de contenido publicitario",
+    period: "Ene. 2023 - Presente",
+    location: "Cali, Colombia",
+    bullets: [
+      "Configuro tiendas Shopify completas para clientes independientes: inventario, pasarelas de pago y logística de envíos",
+      "Desarrollo sitios web para clientes referidos, cubriendo diseño, desarrollo frontend y edición de contenido gráfico según necesidad del proyecto.",
+      "Configuro meta bussines incluyendo meta pixel en el ecommerce para un correcto seguimiento de las actividades de los usuarios en la tienda.",
+    ],
+  },
+  {
     role: "Desarrollador Frontend y Diseñador UI/UX (Prácticas Profesionales)",
     company: "Alliance Bioversity International & CIAT",
     period: "Sep. 2025 - Feb. 2026",
@@ -13,13 +25,23 @@ const EXPERIENCE = [
     ],
   },
   {
-    role: "Desarrollador Frontend Freelance / Investigación Aplicada",
-    company: "Semillero PADIA — Universidad San Buenaventura Cali",
-    period: "Ene. 2025 - Sep. 2025",
+    role: "Asistente de Producción y Multimedia",
+    company: "Fundación Casa de Mono",
+    period: "Ene. 2023 - Mar. 2024",
     location: "Cali, Colombia",
     bullets: [
-      "Contribuí a EndanSys, una aplicación basada en IA para identificación y clasificación de especies en peligro de extinción en Colombia.",
-      "Desarrollo de GeoCluster, una herramienta de aprendizaje automático no supervisado para clasificar zonas de riesgo sísmico en Sudamérica.",
+      "Produje contenido fotográfico y fichas multimedia para redes sociales, apoyando la difusión digital de artistas y exposiciones.",
+      "Brindé soporte en el montaje de obras de arte junto a gestores culturales y artistas profesionales, coordinando logística de exhibiciones.",
+    ],
+  },
+  {
+    role: "Diseñador Web y Analista SEO",
+    company: "Inpublic SAS",
+    period: "Feb. 2020 - Dic. 2021",
+    location: "Cali, Colombia",
+    bullets: [
+      "Realicé auditorías de SEO y análisis de sitios web para PyMEs, identificando oportunidades de mejora en posicionamiento y estructura.",
+      "Diseñe y optimice sitios web para clientes pequeños y medianos, alineando diseño visual con buenas prácticas SEO.",
     ],
   },
 ];

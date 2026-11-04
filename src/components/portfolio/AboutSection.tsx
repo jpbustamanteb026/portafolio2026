@@ -9,14 +9,14 @@ const DECOR = {
 };
 
 const TECH_STACK = [
-  { name: "React", slug: "react", color: "61DAFB" },
-  { name: "Vite", slug: "vite", color: "646CFF" },
-  { name: "Angular", slug: "angular", color: "DD0031" },
-  { name: "TypeScript", slug: "typescript", color: "3178C6" },
+  { name: "Shopify", slug: "shopify", color: "7AB55C" },
+  { name: "Wordpress", slug: "wordpress", color: "21759B" },
+  { name: "Elementor", slug: "elementor", color: "92003B" },
+  { name: "HTML", slug: "html5", color: "E34F26" },
+  { name: "CSS", slug: "css", color: "663399" },
   { name: "JavaScript", slug: "javascript", color: "F7DF1E" },
-  { name: "Tailwind CSS", slug: "tailwindcss", color: "06B6D4" },
-  { name: "Vercel", slug: "vercel", color: "000000", class: "invert-on-light" },
-  { name: "REST APIs", slug: "postman", color: "FF6C37" },
+  { name: "Figma", slug: "figma", color: "F24E1E" },
+  { name: "Blender", slug: "blender", color: "E87D0D" },
   { name: "Git", slug: "git", color: "F05032" },
 ];
 
@@ -96,7 +96,10 @@ export function AboutSection() {
 
         <div className="flex flex-col items-center gap-10 sm:gap-14">
           <AnimatedText
-            text="Ingeniero Multimedia con experiencia en desarrollo frontend con React y Angular. He trabajado en proyectos que van desde aplicaciones de navegación institucional hasta dashboards de datos en tiempo real, además de colaborar en investigación aplicada con grupos de investigación en ciencia de datos. Me enfoco en construir interfaces funcionales y bien pensadas, con una base creativa en diseño 3D e interacción que complementa el desarrollo web."
+            text="Ingeniero Multimedia y Desarrollador Frontend especializado en la creación de interfaces web modernas,
+responsivas y de alto rendimiento. Con sólida experiencia en el desarrollo de aplicaciones web interactivas utilizando
+JavaScript, TypeScript, React, Angular y Astro, así como en el diseño, configuración y gestión de plataformas de
+e-commerce y CMS (Shopify y WordPress)."
             className="font-medium text-center leading-relaxed max-w-150"
             style={{
               color: "var(--page-fg)",
@@ -125,7 +128,7 @@ export function AboutSection() {
                     <img
                       src={iconUrl}
                       alt={tech.name}
-                      className={`w-3.5 h-3.5 object-contain ${tech.class || ""}`}
+                      className="w-3.5 h-3.5 object-contain"
                       loading="lazy"
                     />
                     <span style={{ color: "var(--page-fg)", opacity: 0.85 }}>
